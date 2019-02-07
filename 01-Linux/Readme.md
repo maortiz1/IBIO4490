@@ -119,9 +119,10 @@ See [here](ssh.md) for different types of SSH connection with respect to your OS
 
 3.  Decompress the images (use ``tar``, check the man) inside *sipi_images* folder. 
 
-**For decompressing multiple files use** for **instruction such as the one shown below **
+**For decompressing multiple files use for instruction such as the one shown below **
+```bash
 **for file in *.tar.gz; do tar -xvf “$file”; done**
-
+```
 
 4.  Use  ``imagemagick`` to find all *grayscale* images. We first need to install the *imagemagick* package by typing
 
