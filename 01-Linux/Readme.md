@@ -116,7 +116,12 @@ See [here](ssh.md) for different types of SSH connection with respect to your OS
 
 2. Copy *sipi_images* folder to your personal folder. (If you don't have Linux in your personal computer)
 
+
 3.  Decompress the images (use ``tar``, check the man) inside *sipi_images* folder. 
+
+**For decompressing multiple files use** for **instruction such as the one shown below **
+**for file in *.tar.gz; do tar -xvf “$file”; done**
+
 
 4.  Use  ``imagemagick`` to find all *grayscale* images. We first need to install the *imagemagick* package by typing
 
@@ -176,6 +181,7 @@ See [here](ssh.md) for different types of SSH connection with respect to your OS
 
 1. What is the ``grep``command?
 
+Its a command for linux terminal that allows 
 
 2. What is the meaning of ``#!/bin/python`` at the start of scripts?
 
