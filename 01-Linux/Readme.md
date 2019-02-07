@@ -119,9 +119,9 @@ See [here](ssh.md) for different types of SSH connection with respect to your OS
 
 3.  Decompress the images (use ``tar``, check the man) inside *sipi_images* folder. 
 
-**For decompressing multiple files use for instruction such as the one shown below **
+** For decompressing multiple files use for instruction such as the one shown below **
 ```bash
-**for file in *.tar.gz; do tar -xvf “$file”; done**
+for file in *.tar.gz; do tar -xvf “$file”; done
 ```
 
 4.  Use  ``imagemagick`` to find all *grayscale* images. We first need to install the *imagemagick* package by typing
@@ -182,7 +182,7 @@ See [here](ssh.md) for different types of SSH connection with respect to your OS
 
 1. What is the ``grep``command?
 
-Its a command for linux terminal that allows 
+Its a command for linux terminal that allows to search for a particular pattern in each file, if there is not file given it would search recursively the working directory, and by default, grep prints the matching lines("It was taken from man"). 
 
 2. What is the meaning of ``#!/bin/python`` at the start of scripts?
 
