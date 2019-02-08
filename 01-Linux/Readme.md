@@ -195,7 +195,7 @@ Proof of the download and decompressing of the database from the website:
  
 4. What is the disk size of the uncompressed dataset, How many images are in the directory 'BSR/BSDS500/data/images'?
 According to the instruction ``du -hs BSR`` the size is of:
-![Punto 41](/01-Linux/images/punto41.PNG
+![Punto 41](/01-Linux/images/punto41.PNG)
 So the response was 73M but then it was ask to calculate the size in 1024bytes so its size will change its unit representation:
 
 ![Punto 42](/01-Linux/images/punto42.PNG)
@@ -204,7 +204,7 @@ And according to the answer its size is of 74128.
 For the file BSR/BSDS500/data/images the same two previous instructions where executed but for the specific folder and the answers where in MB 37 and in bytes 37852
 
 
-![Punto 43](/01-Linux/images/punto42.PNG)
+![Punto 43](/01-Linux/images/punto43.PNG)
 
  
 5. What are all the different resolutions? What is their format? Tip: use ``awk``, ``sort``, ``uniq`` 
