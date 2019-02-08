@@ -182,11 +182,16 @@ for file in *.tar.gz; do tar -xvf “$file”; done
 
 1. What is the ``grep``command?
 
-Its a command for linux terminal that allows to search for a particular pattern in each file, if there is not file given it would search recursively the working directory, and by default, grep prints the matching lines("It was taken from man"). 
+Its a command for linux terminal that allows to search for a particular pattern in each file, if there is not file given it would search recursively the working directory, and by default, grep prints the matching lines(*It was taken from man*). 
 
 2. What is the meaning of ``#!/bin/python`` at the start of scripts?
+#! its a unix symbol to say that its executable, so by adding the PATH of the compiler such as python, that will act as the interpreter of the language commands that where printed in te script to execute.[1]
 
 3. Download using ``wget`` the [*bsds500*](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html#bsds500) image segmentation database, and decompress it using ``tar`` (keep it in you hard drive, we will come back over this data in a few weeks).
+
+Proof of the download and decompressing of the database from the website:
+
+![Punto 3](/images/imgpunto3.jpg)
  
 4. What is the disk size of the uncompressed dataset, How many images are in the directory 'BSR/BSDS500/data/images'?
  
@@ -213,6 +218,7 @@ We will be delivering every lab through the [github](https://github.com) tool (S
 
 http://www.ee.surrey.ac.uk/Teaching/Unix/ 
 
-
+References
+[1]
 
 
