@@ -191,7 +191,7 @@ Its a command for linux terminal that allows to search for a particular pattern 
 
 Proof of the download and decompressing of the database from the website:
 
-![Punto 3](/images/imgpunto3.PNG)
+![Punto 3](/01-Linux/images/imgpunto3.PNG)
  
 4. What is the disk size of the uncompressed dataset, How many images are in the directory 'BSR/BSDS500/data/images'?
  
