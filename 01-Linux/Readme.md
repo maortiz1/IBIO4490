@@ -196,21 +196,50 @@ Proof of the download and decompressing of the database from the website:
 4. What is the disk size of the uncompressed dataset, How many images are in the directory 'BSR/BSDS500/data/images'?
 According to the instruction ``du -hs BSR`` the size is of:
 ![Punto 41](/01-Linux/images/punto41.PNG)
+
 So the response was 73M but then it was ask to calculate the size in 1024bytes so its size will change its unit representation:
 
 ![Punto 42](/01-Linux/images/punto42.PNG)
+
 And according to the answer its size is of 74128. 
 
 For the file BSR/BSDS500/data/images the same two previous instructions where executed but for the specific folder and the answers where in MB 37 and in bytes 37852
 
-
 ![Punto 43](/01-Linux/images/punto43.PNG)
-
  
 5. What are all the different resolutions? What is their format? Tip: use ``awk``, ``sort``, ``uniq`` 
+```bash
+# found all resolutions
+# first list all the resolutions
+cd ~
+cd /media/disk1/vision/maortiz1/BSR/BSDS500/data/
+images=$(find images -name *.jpg) #for finding all images
 
+alldi=$(for im in ${images[*]};do identify -verbose $im | grep "Number pixels:" | cut -d ':' -f2;done)
+```
+Code above was use to get the resolution which was 154K however, if you do it by size it will get two types of sizes
 6. How many of them are in *landscape* orientation (opposed to *portrait*)? Tip: use ``awk`` and ``cut``
  
+```bash 
+cd ~
+cd /media/disk1/vision/maortiz1/BSR/BSDS500/data/
+images=$(find images -name *.jpg)
+count=0;
+
+for im in ${images[*]};
+do   
+
+
+x=$(identify -format "[%w]" $im)
+identify -format "%w" $im
+y=$(identify -format "[%h]" $im)
+if [$x -ge $y]
+then
+count=$((count+1))
+fi
+done
+```
+
 7. Crop all images to make them square (256x256) and save them in a different folder. Tip: do not forget about  [imagemagick](http://www.imagemagick.org/script/index.php).
 
 
