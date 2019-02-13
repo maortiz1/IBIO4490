@@ -11,6 +11,7 @@ import os
 import numpy as np
 import subprocess
 import math
+
 try:    
     import urllib
 except ImportError:
@@ -28,7 +29,9 @@ try:
 except ImportError:   
     subprocess.call(['pip','install','random'])
     import random
-    
+
+
+subprocess.call(['pip','install','tkinter'])    
 try:    
     import matplotlib
 except ImportError:   
@@ -39,7 +42,7 @@ import matplotlib.pyplot as plt
 
 
     
-subprocess.call(['pip','install','tkinter'])
+
 
 try:    
     import cv2
