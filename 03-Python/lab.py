@@ -30,14 +30,16 @@ except ImportError:
     import random
     
 try:    
-    import matplotlib.pyplot as plt
+    import matplotlib
 except ImportError:   
     subprocess.call(['pip','install','matplotlib'])
-    import matplotlib.pyplot as plt  
+    import matplotlib
     
+import matplotlib.pyplot as plt
 try:    
     import cv2
-except ImportError:   
+except ImportError: 
+    
     subprocess.call(['pip','install','opencv-python'])
     import cv2
     
