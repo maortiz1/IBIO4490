@@ -36,6 +36,11 @@ except ImportError:
     import matplotlib
     
 import matplotlib.pyplot as plt
+
+
+    
+subprocess.call(['pip','install','tkinter'])
+
 try:    
     import cv2
 except ImportError: 
