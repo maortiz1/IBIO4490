@@ -35,7 +35,7 @@ subprocess.call(['pip','install','tkinter'])
 try:    
     import matplotlib
 except ImportError:   
-    subprocess.call(['pip','install','matplotlib'])
+    subprocess.call(['pip','install','--user','matplotlib'])
     import matplotlib
     
 import matplotlib.pyplot as plt
