@@ -15,7 +15,7 @@ import math
 try:    
     import urllib
 except ImportError:
-    subprocess.call(['pip','install','urllib'])
+    subprocess.call(['pip3','install','urllib'])
     import urllib
 
 try:    
@@ -27,15 +27,14 @@ except ImportError:
 try:    
     import random
 except ImportError:   
-    subprocess.call(['pip','install','random'])
+    subprocess.call(['pip3','install','random'])
     import random
 
 
-subprocess.call(['pip','install','tkinter'])    
 try:    
     import matplotlib
 except ImportError:   
-    subprocess.call(['pip','install','--user','matplotlib'])
+    subprocess.call(['pip3','install','--user','matplotlib'])
     import matplotlib
     
 import matplotlib.pyplot as plt
