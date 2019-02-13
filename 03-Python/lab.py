@@ -32,12 +32,12 @@ except ImportError:
 
 
 try:    
-    import matplotlib
+    import matplotlib.pyplot as plt
 except ImportError:   
     subprocess.call(['pip3','install','--user','matplotlib'])
-    import matplotlib
+    import matplotlib.pyplot as plt
     
-import matplotlib.pyplot as plt
+
 
 
     
@@ -112,7 +112,7 @@ for x in range(0,N):
 
     
 cf = plt.get_current_fig_manager()
-cf.window.showMaximized()
+
 
 fig.set_tight_layout({"pad": .0}) 
 plt.show()
