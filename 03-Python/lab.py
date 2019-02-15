@@ -114,7 +114,7 @@ for x in range(0,N):
     allpath.append(os.path.join(pathImg,dirList[j]))
 
 endtime = time.perf_counter();
-print('The time spent processing this code was:'+ (endtime-start))
+print('The time spent processing this code was:'+ str(endtime-start))
    
 cf = plt.get_current_fig_manager()
 
