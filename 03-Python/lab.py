@@ -13,7 +13,7 @@ import subprocess
 import math
 import time
 
-
+#Importing relevant libraries for code development
 start=time.perf_counter();
 try:    
     import urllib
@@ -58,14 +58,12 @@ try:
 except ImportError:   
     subprocess.call(['pip','install','math'])
     import math
+    
+#URL of folder that contains database to be download
 URL='https://www.dropbox.com/s/2eg43ogdp7ieb85/blood-cells.zip?dl=1'
-#r = requests.get(URL)
-#
-#with open("blood-cells.zip","wb") as code:
-#    code.write(r.content)
-#    
-#checks if current directory contains the file
+
 print('It will be proceed to download the database')
+#checking if databse is already downloaded
 if not(os.path.exists('blood-cells.zip')):
     urllib.request.urlretrieve(URL, "blood-cells.zip") 
     print('The database had been download')
@@ -73,6 +71,7 @@ else:
     print('The file blood-cells.zip already exists')
     
 print('It will be proceed to decompress de database')
+#checkinf if database is already decompress
 if not(os.path.exists('blood-cells')):
      zips = zipfile.ZipFile('blood-cells.zip','r')
      zips.extractall('blood-cells')
@@ -90,9 +89,10 @@ else:
      
      
 
-
+#creating path for reading images of database and choosing them
 file_path = os.path.join('blood-cells','dataset2-master','dataset2-master','images','TRAIN')
 N= int(input("Please enter a multiple of two of the amount of images you will like to visualize: "))
+#empty list
 allpath = list()
 fol=os.listdir(file_path)
 a=math.floor(N/2)
@@ -114,7 +114,7 @@ for x in range(0,N):
     allpath.append(os.path.join(pathImg,dirList[j]))
 
 endtime = time.perf_counter();
-print('The time spent processing this code was:'+ str(endtime-start))
+print('The time spent processing this code was: '+ str(endtime-start)+' seconds')
    
 cf = plt.get_current_fig_manager()
 
