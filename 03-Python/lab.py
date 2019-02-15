@@ -11,7 +11,10 @@ import os
 import numpy as np
 import subprocess
 import math
+import time
 
+
+start=time.perf_counter();
 try:    
     import urllib
 except ImportError:
@@ -110,14 +113,15 @@ for x in range(0,N):
     axes[x%2,math.floor(x/2)].get_yaxis().set_visible(False)
     allpath.append(os.path.join(pathImg,dirList[j]))
 
-    
+endtime = time.perf_counter();
+print('The time spent processing this code was:'+ (endtime-start))
+   
 cf = plt.get_current_fig_manager()
 
 
 fig.set_tight_layout({"pad": .0}) 
 plt.show()
     
-
 
  
     
