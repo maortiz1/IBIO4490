@@ -11,3 +11,9 @@ _data/
 .ipynb*
 *.zip
 blood-cells/
+*.txt
+dddd.py
+readdata.py
+05-Textons/cifar-10-batches-py/
+*.tar.gz
+*.tar
