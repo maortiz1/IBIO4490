@@ -18,9 +18,12 @@ readdata.py
 *.tar.gz
 *.tar
 <<<<<<< HEAD
+<<<<<<< HEAD
 BSDS_small/
 *.png
 *.PNG
 05-Textons/python/cifar-10-batches-py/
+=======
+>>>>>>> b0d8ca7b54b95954d524d550bb6011821b5426d7
 =======
 >>>>>>> b0d8ca7b54b95954d524d550bb6011821b5426d7
