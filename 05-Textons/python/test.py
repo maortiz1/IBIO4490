@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Feb 28 22:34:13 2019
-
-@author: m_ana
-"""
+#!/usr/bin/ipython3
 import pickle
 import numpy as np
 import matplotlib.pyplot as plt
@@ -15,7 +10,7 @@ except ImportError:
     import random
 
 with open('data','rb') as f:
-    fb,ACAresultrain,cMTrain,c1,aca,mapT, textons,acaResul2train,aca2,c,cMtrain2, tmapTrain,histTrain,tmapTrain,histTrain,imagesTrain,labelsTrain,imagesTest,labelTest = pickle.load(f)
+    fb,ACAresultrain,cMTrain,c1,aca,mapT, textons,acaResul2train,aca2,c,cMtrain2, tmapTrain,histTrain,tmapTest,histTest,imagesTrain,labelsTrain,imagesTest,labelTest,result2 = pickle.load(f)
 
 
 plt.figure()

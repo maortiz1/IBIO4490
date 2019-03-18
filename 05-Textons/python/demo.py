@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Feb 28 22:34:45 2019
-
-@author: m_ana
-"""
+#!/usr/bin/ipython3
 import sys 
 import os
 import numpy as np
@@ -52,6 +47,6 @@ for i in range(10):
     fig.add_subplot(ax)
     fig.add_subplot(ax2)
     
-
+plt.show()
  
     
