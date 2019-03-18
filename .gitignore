@@ -2,7 +2,6 @@ Ignore/
 *.pptx
 *.ppt
 *.odt
-
 *.tgz
 *solution*
 solution/
@@ -21,8 +20,6 @@ BSDS_small/
 *.png
 *.PNG
 05-Textons/python/cifar-10-batches-py/
-
-Ignore/
 *.pptx
 *.ppt
 *.odt
@@ -40,8 +37,7 @@ blood-cells/
 cifar-10-batches-py/
 *.tar.gz
 *.tar
-05-Textos/python/*.txt
-
+05-Textons/python/*.txt
 BSDS_small/
 05-Textons/python/data
 *.mat
